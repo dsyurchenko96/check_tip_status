@@ -1,23 +1,3 @@
-"""
-Check TIP Status
-
-This script checks the status of files uploaded to the Threat Intelligence Portal (TIP).
-For each file path provided, it calculates its MD5 hash and checks the TIP for an existing
-record. If a record is found, the script outputs the result. Otherwise, the script uploads
-the file for a basic analysis and outputs the result.
-
-To run the script, you need to provide an API token and a list of file paths.
-You can request an API token from the Threat Intelligence Portal if you sign up.
-For more information about the API and getting a token, follow the link below:
-https://opentip.kaspersky.com/Help/Doc_data/WorkingWithAPI.htm
-
-Example usage: python check_tip_status.py token_file_path file_path_1 [file_path_2 ...]
-
-Arguments:
-token_file_path: Path to the file containing a valid API token.
-file_paths: List of file paths to check or upload to TIP.
-"""
-
 import os
 import hashlib
 import json
